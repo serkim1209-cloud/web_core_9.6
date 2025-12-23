@@ -1,0 +1,124 @@
+
+@font-face {
+    font-family: "TT Lakes";
+    src: url(../fonts/TTLakes-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TT Lakes";
+    src: url(../fonts/TTLakes-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+/*Основной контент*/
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 320px;
+    height: 100vh;
+    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
+}
+/*Все иконки*/
+.icons {
+    display: flex;
+    align-items: center;
+    margin: 0px 15px 0px;
+}
+/*Картинка  GPS*/
+img {
+    margin: 7px;
+}
+/*Блок меню*/
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+/*Кнопки в меню*/
+.nav--link{
+    border: none;
+    background-color: rgba(255, 255, 255, 1);
+    font-family: "TT Lakes";
+    font-weight: 500;
+    font-style: normal;
+    border: 3px solid transparent;
+    text-decoration: none;
+    color: rgba(27, 28, 33, 1);
+    margin: 0px 15px 0px;
+    padding: 5px;
+   
+}
+/*Стиль кнопок при наведении*/
+.nav--link:hover{
+  opacity: 0.4; 
+  transition: opacity 0.5s;
+  border-radius: 25px;
+  border-color: aqua;
+
+}
+    
+
+/*Нижний блок с кантактной информацией*/
+.contact {
+  margin-left: 15px;
+  margin-top: auto;
+}
+/*Заголовок*/
+.left-border--link {
+    color: rgba(126, 126, 130, 1);
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family: "TT Lakes";
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+}
+/*Иконка поиска*/
+.icons--search {
+    margin-left: 80px;
+}
+/*Голубая иконка с левой стороны*/
+.left-border {
+    margin-left: 0%;
+    margin-right: 15px;
+}
+/*Номер телефона*/
+.contact--number {
+    font-family: "TT Lakes";
+    font-weight: 700;
+    font-style:normal;
+    color: rgba(27, 28, 33, 1);
+}
+/*Языки*/
+.lang {
+    display: flex;
+    gap: 5px;
+    font-family: "TT Lakes";
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+button {
+    all:unset;
+}
+/*Сайт*/
+ .a {
+    font-family: "TT Lakes";
+    font-weight: 500;
+    font-style: normal;
+    color: rgba(27, 28, 33, 1);
+ }
+ .lang--ru {
+    color: rgba(126, 126, 130, 1);
+ }
+ /*Иконка телефона*/
+ .contact--chat-copy{
+    margin-left: 0px;
+ }

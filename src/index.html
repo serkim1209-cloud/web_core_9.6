@@ -7,10 +7,126 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>web_core_9.6</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <img src="./img/webpack.svg" alt="Webpack Logo" width="200px" />
-    <h3>Welcome to Webpack 5 starter </h3>
+    <div class="side-menu">
+              <div class="icons">
+           <a href="#"><img class="icons--burger" src="./icons/burger.svg" alt="круг x"></a>
+           <a href="#"><img class="icons--groubutton" src="./icons/Group.svg" alt="GpS"></a>
+           <a href="#"><img class="icons--search" src="./icons/search.svg" alt="поиск"></a>
+        </div>
+        
+        <div class="nav">
+            <a href="#" class="left-border--link"><img class="left-border" src="./icons/highlight.svg">Ремонт техники</a>
+            <a href="#" class="nav--link">Услуги и сервисы</a>
+            <a href="#" class="nav--link">Корпоративным клиент</a>
+            <a href="#" class="nav--link">Продавцам техники</a>
+            <a href="#" class="nav--link">Партнерам</a>
+            <a href="#" class="nav--link">Производителям</a>
+            <a href="#" class="nav--link">Наши сервисные центр</a>
+            <a href="#" class="nav--link">Контакты</a>
+        </div>
+           <div class="contact">
+            <a href="#"><img class="contact--chat-cobuttony" src="./icons/chat copy.svg" alt="чат копии"></a>
+            <a href="#"><img class="contact--chat" src="./icons/chat.svg" alt="чат"></a>
+            <a href="#"><img class="contact--buttonrofile" src="./icons/profile.svg" alt="профили"></a>
+            <p class="contact--a">mail@cbuttons.com</p>
+            <strong class="contact--number">8 800 890 8900</strong>
+           </div>
+           <div class="lang">
+            <button class="lang--ru">RU</button>
+            <button>EN</button>
+            <button>CH</button>
+           </div>
+    </div>
+      <header class="nav">
+
+  <div class="left">
+        <a href="#"><img src="./icons/burger.png" alt=""></a>
+        <p class="divider"></p>
+        <a href="#"><img class="header--img" src="./img/Group.png" alt=""></a>
+    </div>
+        <div class="center">
+
+        <a href="#"><img src="./icons/call.svg" alt=""></a>
+        <a href="#"><img src="./icons/chat.svg" alt=""></a>
+        <a href="#"><img src="./icons/profile.svg" alt=""></a>
+    </div>
+        <div class="right">
+        <p class="divider-2"></p>
+        <a href="#"><img src="./icons/repair.png" alt="Оставить заявку"></a>
+        <a href="#"><img src="./icons/checkstatus.png" alt="Статус ремонта"></a>
+    </div>
+       
+    </header>
+
+         <main>
+            
+<div class="title">
+            <img class="left--border--icons" src="./icons/highlight.png">
+        <h1>Услуги и сервисы</h1>
+        <div class="right--title">
+        <p class="title--text">Оставить заявку</p>
+        <a href="#"><img src="./icons/repair.png" alt="Оставить заявку"></a>
+        <p class="title--text">Статус ремонта</p>
+        <a href="#"><img src="./icons/checkstatus.png" alt="Статус ремонта"></a>
+    </div>
+     
+</div>
+  
+        <div class="menu">
+           <button class="menu--title--1">Ремонтируемые бренды</button>
+            <button class="menu--title">Ремонтируемые устройства</button>
+            <button class="menu--title">Цены на услуги</button>
+            <button class="menu--title">Специальные цены</button>
+            <button class="menu--title">Адреса сервисных центров</button>
+        </div>
+
+<p class="commit">Отзывы</p>
+
+<div class="main-content">
+ <div class="main--title">
+    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+    <br><br><br>
+    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+ </div>
+ <div class="check-box">
+  <div class="check-box-icon-text"><img class="check-box-icon" src="./icons/icon.png" alt="стрелки">
+     Читать далее</div>
+</div>
+    <img class="main--img" src="./img/Cps.png" alt="">
+        
+    </div>
+    <!-- Slider main container -->
+<div class="swiper">
+  <h1 class="title">Ремонт техники различных брендов</h1>
+  <div class="gradient"></div>
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="./img/ACER.svg"><img src="./img/go.svg"></div>
+    <div class="swiper-slide"><img src="./img/apple.svg"><img src="./img/go.svg"></div>
+    <div class="swiper-slide"><img src="./img/BOSCH.svg"><img src="./img/go.svg"></div>
+    <div class="swiper-slide"><img src="./img/HP.svg"><img src="./img/go.svg"></div>
+    <div class="swiper-slide"><img src="./img/lenovo.svg"><img src="./img/go.svg"></div>
+    <div class="swiper-slide"><img src="./img/samsung.svg"><img src="./img/go.svg"></div>
+    <div class="swiper-slide"><img src="./img/SONY.svg"><img src="./img/go.svg"></div>
+    <div class="swiper-slide"><img src="./img/ViewSonic.svg"><img src="./img/go.svg"></div>
+    <div class="swiper-slide"><img src="./img/ACER.svg"><img src="./img/go.svg"></div>
+    <div class="swiper-slide"><img src="./img/BOSCH.svg"><img src="./img/go.svg"></div>
+    <div class="swiper-slide"><img src="./img/samsung.svg"><img src="./img/go.svg"></div>
+  </div>
+ 
+      <button id="media__button"><img id="media__img" src="./img/expand.svg">Показать все</button>
+
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+ 
+</div>
+ <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
   </body>
 </html>
