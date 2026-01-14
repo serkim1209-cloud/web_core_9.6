@@ -2,3 +2,8 @@ import '../scss/side-menu.scss';
 import '../scss/content.scss';
 import '../scss/swiper-brands.scss';
 import '../js/swiper-brands.js';
+import '../js/burger.js';
+import '../scss/swiper-prices.scss';
+import './swiper-prices.js';
+import '../scss/swiper-repear.scss';
+import '../js/swiper-repear.js';

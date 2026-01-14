@@ -11,34 +11,60 @@
     font-style: normal;
 }
 
-
 /*Основной контент*/
 .side-menu {
     position: absolute;
-    display: none;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
     flex-direction: column;
-    gap: 20px;
     width: 100%;
     max-width: 320px;
     height: 100vh;
     box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
     border-radius: 7px;
+   
 }
-.side-menu:active{
+.side-menu-bagraund{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 253, 253, 0.925);
+    z-index: -1;
+}
+.side-menu-bagraund.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 253, 253, 0.925);
+    z-index: 2;
+}
+.side-menu.active {
+    z-index: 3;
+     background-color: rgba(255, 255, 255, 1);
+      box-shadow: 100px 0px 52px rgba(112, 119, 119, 0.2);
+      transition: opacity 0.10s;
+}
+.side-menu-contact-img{
     display: flex;
+    flex-direction: row;
+    gap: 15px;
+   
 }
 /*Все иконки*/
 .icons {
     display: flex;
     align-items: center;
-    margin: 0px 15px 0px;
-}
-/*Картинка  GPS*/
-img {
-    margin: 7px;
+    margin: 0px 10px 0px;
+    gap: 20px;
 }
 /*Блок меню*/
-.nav {
+.side-menu-nav{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -54,8 +80,8 @@ img {
     border: 3px solid transparent;
     text-decoration: none;
     color: rgba(27, 28, 33, 1);
-    margin: 0px 15px 0px;
-    padding: 5px;
+   margin: 0px 15px 0px;
+    
    
 }
 /*Стиль кнопок при наведении*/
@@ -69,7 +95,7 @@ img {
     
 
 /*Нижний блок с кантактной информацией*/
-.contact {
+.side-menu-contact{
   margin-left: 15px;
   margin-top: auto;
 }
@@ -78,6 +104,8 @@ img {
     color: rgba(126, 126, 130, 1);
     display: flex;
     align-items: center;
+    position: relative;
+    right: 18px;
     margin-top: 15px;
     margin-bottom: 5px;
     font-family: "TT Lakes";
@@ -91,8 +119,8 @@ img {
 }
 /*Голубая иконка с левой стороны*/
 .left-border {
-    margin-left: 0%;
-    margin-right: 15px;
+  
+   
 }
 /*Номер телефона*/
 .contact--number {
@@ -128,3 +156,19 @@ button {
  .contact--chat-copy{
     margin-left: 0px;
  }
+ .icons--groubutton{
+    width: 70px;
+    height: 40px;
+ }
+ @media(max-width: 768px){
+    .side-menu{
+        max-width: 320px;
+        height: 650px;
+        
+    }
+    .side-menu-bagraund{
+        width: 320px;
+        height: 650px;
+       
+    }
+}
