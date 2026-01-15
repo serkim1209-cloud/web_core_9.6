@@ -1,4 +1,162 @@
-.repear {
+@font-face {
+    font-family: "TT Lakes";
+    src: url(../fonts/TTLakes-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.repear{
+    box-sizing: border-box;
+    background-color: rgba(248, 248, 248, 1);
     z-index: 1;
-   background-color: rgba(248, 248, 248, 1);
+    overflow: hidden;
+
+}
+.swiper-repear {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 320px;
+  height: 234px;
+  margin: 0px;
+  padding: 20px;
+}
+.swiper-wrapper-repear{
+    display: flex;
+    width: 270px;
+}
+.swiper-slide-repear{
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   width: 240px;
+   flex-shrink: 0;
+   height: 160px;
+   border: 1px solid rgba(234, 234, 234, 1);
+   padding: 15px;
+   border-radius: 6px;
+   background-color: rgba(255, 255, 255, 1);
+}
+p{
+    position: relative;
+    bottom: 110px;
+    font-family: 'TTLakes';
+    font-weight: 500;
+    font-style: normal;
+}
+
+.swiper-pagination-repear{
+    display: flex;
+    justify-content: center;
+    margin: 18px 0px 0px 0px;
+    
+     
+}
+.swiper-pagination-repear-bullet-active{
+    background-color: rgba(181, 182, 188, 1);
+}
+.swiper-pagination-repear-bullet{
+    background-color: rgb(153, 150, 150);
+}
+.img {
+   
+    display: flex;
+    align-items: center;
+   
+}
+.swiper-title-repear {
+    font-family: "TT Lakes";
+    font-weight: 400;
+    font-style: normal;
+    width: 180px;
+    height: 80px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin-left: 15px;
+
+}
+.gradient-repear{
+    width: 24px;
+    height: 170px;
+    position: absolute;
+    background: linear-gradient(to left, white,#ffffff00);
+    z-index: 1000;
+    right: 0;
+    left: 296px;
+}
+#media-button-repear{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 140px;
+    height: 40px;
+    font-family: "TT Lakes";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    border: none;
+    background-color: rgba(248, 248, 248, 1);
+    &:hover{
+        cursor: pointer;
+    }
+}
+.is-hidden {
+    display: none !important;
+}
+.flip {
+    transform: rotate(180deg);
+}
+
+@media(min-width: 768px){
+
+.swiper-repear{
+    padding-top: 0px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.swiper-title-repear{
+    margin-bottom: 40px;
+    width: 100%;
+    height: 24px;
+}
+.gradient-repear, .swiper-pagination-repear{
+    display: none;
+}
+#media-button-repear{
+    display: flex;
+}
+.swiper-wrapper-repear{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    column-gap: 45px;
+}
+.swiper-slide-repear:nth-child(n+7){
+    display: none;
+}
+}
+@media(min-width: 1120px){
+
+.swiper-wrapper-repear{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    column-gap: 45px;
+}
+.swiper-slide-repear:nth-child(n+10){
+    display: flex;
+}
+}
+@media (max-width: 784px){
+    .repear{
+        width: 320px;
+    }
+    #media-button-repear{
+        display: none;
+    }
 }
