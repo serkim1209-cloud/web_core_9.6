@@ -32,16 +32,14 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(255, 253, 253, 0.925);
+    background-color: rgba(239, 236, 236, 0.925);
     z-index: -1;
 }
 .side-menu-bagraund.active {
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(255, 253, 253, 0.925);
+    background-color: rgba(255, 253, 253, 0.801);
     z-index: 2;
 }
 .side-menu.active {
@@ -60,8 +58,9 @@
 .icons {
     display: flex;
     align-items: center;
-    margin: 0px 10px 0px;
+    margin: 0px 5px 0px;
     gap: 20px;
+    padding: 10px;
 }
 /*Блок меню*/
 .side-menu-nav{
@@ -69,6 +68,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+
 }
 /*Кнопки в меню*/
 .nav--link{
@@ -166,7 +166,7 @@ button {
         height: 650px;
         
     }
-    .side-menu-bagraund{
+.side-menu-bagraund.active{
         width: 320px;
         height: 650px;
        
