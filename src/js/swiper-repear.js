@@ -13,6 +13,7 @@ function initSwiper() {
       el: '.swiper-pagination-repear',
       clickable: true,
     },
+    loop: true,
     // Включаем только на мобильных (до 768px), если нужно
     breakpoints: {
       768: {

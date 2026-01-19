@@ -5,6 +5,16 @@
     font-weight: 400;
     font-style: normal;
 }
+h2{
+    font-family: "TT Lakes";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: rgba(126, 126, 130, 1);
+
+}
 
 .prices{
     box-sizing: border-box;
@@ -29,8 +39,8 @@
 }
 .swiper-slide-prices{
    display: flex;
-   align-items: center;
-   justify-content: space-between;
+   flex-direction: column;
+   align-items: start;
    width: 260px;
    height: 200px;
    flex-shrink: 0;
@@ -39,11 +49,28 @@
    border-radius: 6px;
    background-color: rgba(255, 255, 255, 1);
 }
+.title-prices{
+    display: flex;
+    flex-direction: row;
+    width: 228px;
+    height: 56px;
 
+}
+.title-prices-price{
+    display: flex;
+    flex-direction: row;
+    width: 74px;
+    height: 38px;
+}
+.title-prices-time{
+    display: flex;
+    flex-direction: row;
+    width: 81px;
+    height: 38px;
+}
 .swiper-pagination-prices{
     display: flex;
     justify-content: center;
-   
     bottom: 40px;  
 }
 .swiper-pagination-prices-bullet-active{
@@ -58,6 +85,10 @@ img {
     align-items: center;
    
   
+}
+.swiper-slide-prices-order{
+    width: 119px;
+    height: 32px;
 }
 .swiper-title-prices {
     font-family: "TT Lakes";
