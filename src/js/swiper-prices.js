@@ -1,27 +1,20 @@
-let swiper;
-
+let swiper
 function initSwiper() {
-  swiper = new Swiper('.swiper-prices', {
-    // Указываем ваши кастомные классы
-    wrapperClass: 'swiper-wrapper-prices',
-    slideClass: 'swiper-slide-prices',
-    
-    // Настройки слайдера
-    slidesPerView: 'auto',
-    spaceBetween: 20,
-    pagination: {
-      el: '.swiper-pagination-prices',
-      clickable: true,
-    },
-    loop: true,
-    // Включаем только на мобильных (до 768px), если нужно
-    breakpoints: {
-      768: {
-        enabled: false, // Отключает swiper на десктопах
-      }
-    }
-  });
+    swiper = new Swiper('.swiper-prices', {
+        wrapperClass: 'swiper-wrapper-prices',
+        slideClass: 'swiper-slide-prices',
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        pagination: {
+            el: '.swiper-pagination-prices',
+            clickable: true,
+        },
+        loop: true,
+    })
 }
+document.addEventListener('DOMContentLoaded', () => {
+  initSwiper();
+});
 
 initSwiper();
 window.addEventListener('resize', () => {
