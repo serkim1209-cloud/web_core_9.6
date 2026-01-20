@@ -28,7 +28,9 @@
     font-style: normal;
 }
 
-
+body{
+     font-family: 'TTLakes';
+}
 .content {
     display: flex;
     flex-direction: column;
@@ -102,11 +104,13 @@
 
 }
 /*Текст заголовка*/
-h1 {
+.content-text {
     font-family: 'TTLakes';
     font-weight: 700;
     font-style:normal;
     margin-left: 0;
+    font-size: 28px;
+    color: rgba(27, 28, 33, 1);
    
 }
 
