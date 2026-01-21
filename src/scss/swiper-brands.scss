@@ -124,6 +124,7 @@ img {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     column-gap: 45px;
+    height: auto;
 }
 .swiper-slide:nth-child(n+7){
     display: none;
@@ -136,6 +137,8 @@ img {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     column-gap: 45px;
+
+
 }
 .swiper-slide:nth-child(n+10){
     display: flex;

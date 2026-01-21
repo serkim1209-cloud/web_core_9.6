@@ -132,10 +132,7 @@ body{
 }
 /*Размеры иконок*/
 
-img {
-    width: 40px;
-    height: 40px
-}
+
 /*Надпись отзывы*/
 .commit{
     display: none;
@@ -199,7 +196,7 @@ img {
     flex-direction: column;
     width: 100%;
     height: auto;
-    margin-top: 45px;
+    margin-top: 10px;
    
 }
 /*Основной текст*/
@@ -227,7 +224,7 @@ img {
 .check-box-icon {
     width: 30px;
     height: 30px;
-    margin-left: 35px;
+   
   
 }
 /*Текст от чек бокса*/
@@ -238,7 +235,7 @@ img {
     font-family: 'TTLakes';
     font-weight: 500;
     font-style: normal;
-    padding: 10px;
+   
 
 }
 
@@ -286,17 +283,7 @@ img {
     letter-spacing: 0.2px;
 
    }
-   .check-box {
-    position: absolute;
-    width: 150px;
-    height: 30px;
-    white-space: nowrap;
-    top: 200px;
-   }
-   .main--img {
-    max-width: 50%;
-   }
-  
+
    }
 
 
@@ -316,20 +303,19 @@ img {
     }
 
     .main--title{
-    height: 90px;
-    overflow: hidden;
+        display: flex;
+        flex-direction: column;
+
    }
     .right--title{
         display: none;
     }
-    .check-box {
-        position:relative;
-        right: 50px;
-        margin: 15px;
 
-    }
     .main--img{
         margin-left: 0px;
+    }
+    .main-text{
+        display: none;
     }
 }
 /*Размер для веб*/
@@ -354,6 +340,7 @@ img {
         font-weight: 500;
         font-style: normal;
         padding: 10px;
+        margin-left: 60px;
 
       }
 
