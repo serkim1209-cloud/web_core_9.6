@@ -3,9 +3,6 @@
     max-width: 1200px;
     margin: 0;
     padding: 0; 
-   
-  
-
 }
 
 @font-face {
@@ -29,7 +26,14 @@
 }
 
 body{
-     font-family: 'TTLakes';
+     font-family: 'TTLakes'; 
+     background-color: rgba(255, 255, 255, 1);
+}   
+main{
+    background-color: rgba(248, 248, 248, 1)
+}
+img{
+    background-color: rgba(255, 255, 255, 1);
 }
 .content {
     display: flex;
@@ -53,8 +57,6 @@ body{
     font-weight: 500;
     font-style: normal;
     gap: 10px;
-
-  
 }
 .nav{
     display :flex;
@@ -72,9 +74,7 @@ body{
     display: flex;
     justify-content: center;
     width: 70px;
-    height: 40px;
-
-  
+    height: 40px; 
 }
 /*Блок заголовка*/
 
@@ -90,17 +90,14 @@ body{
     white-space: nowrap;
     width: 100%;
     height: auto;
-    margin-top: 45px;
-    
-   
-    
-   
+    margin-top: 45px;  
 }
 .right--title{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
+    padding: 10px;
 
 }
 /*Текст заголовка*/
@@ -207,25 +204,20 @@ body{
     font-family: 'TTLakes';
     font-weight: 400;
     font-style:normal;
-    padding-left: 10px;
+    padding: 10px;
    
 }
 
 /*Основная картинка*/
 
-.main--img {
-    width: 100%;
-    height: auto;
-    margin-left: 10px;
 
-}
 /*Чекбокс далее стрелки*/
 
 .check-box-icon {
     width: 30px;
     height: 30px;
+    background-color: rgba(248, 248, 248, 1);
    
-  
 }
 /*Текст от чек бокса*/
 
@@ -235,10 +227,14 @@ body{
     font-family: 'TTLakes';
     font-weight: 500;
     font-style: normal;
-   
-
+    background-color: rgba(248, 248, 248, 1);
 }
-
+.check-box, .main--img{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: rgba(248, 248, 248, 1);
+}
 
 /*Экран для планшета*/
 
@@ -275,13 +271,8 @@ body{
     flex-direction: row;
     
    }
-   .main--title{
-    max-width: 50%;
-    height: 160px;
-    overflow: hidden;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-
+   .main--title, .check-box{
+    width: 50%;
    }
 
    }
@@ -305,6 +296,7 @@ body{
     .main--title{
         display: flex;
         flex-direction: column;
+        
 
    }
     .right--title{
@@ -356,6 +348,9 @@ body{
       }
       .main-content{
         padding: 0;
+      }
+      .main--title, .check-box{
+        width: 50%;
       }
 }
         

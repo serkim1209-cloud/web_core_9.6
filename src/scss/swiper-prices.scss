@@ -9,6 +9,9 @@
     background-color: rgba(255, 255, 255, 1)
   
 }
+.swiper-header-prices{
+display: none;
+}
 .swiper-wrapper-prices{
     display: flex;
 }
@@ -18,7 +21,7 @@
     overflow: hidden;
     padding: 10px;
      width: 320px;
-    height: 500px;
+    height: 300px;
     gap: 15px;
     background-color: rgba(248, 248, 248, 1);
 
@@ -28,10 +31,9 @@
     flex-direction: column;
     align-items: flex-start;
     width: 250px;
-    height: 56px;
-    border: solid 1px orange;
     font-size: 14px;
     line-height: 15px;
+     background-color: rgba(255, 255, 255, 1)
     
 }.title-prices-price{
     display: flex;
@@ -40,8 +42,8 @@
     justify-content: center;
     width: 74px;
     height: 38px;
-    border: solid 1px greenyellow;
     font-size: 14px;
+    background-color: rgba(255, 255, 255, 1)
 }
 .title-prices-time{
     display: flex;
@@ -49,13 +51,13 @@
     justify-content: space-between;
     width: 240px;
     height: 34px;
-    border: solid 1px purple;
     font-size: 14px;
-
+     background-color: rgba(255, 255, 255, 1)
 }
 .title-time{
     display: flex;
     flex-direction: column;
+    background-color: rgba(255, 255, 255, 1)
 }
 p{
     font-size: 14px;
@@ -66,18 +68,17 @@ h1,h3{
     color: rgba(126, 126, 130, 1);
     margin: 0;
     margin-bottom: 5px;
-
 }
-h2{
-    font-family: "TT Lakes";
-    font-weight: 500;
-    font-size: 14px;
+h3{
+     background-color: rgba(255, 255, 255, 1)
 }
-
+.swiper-color{
+    background-color: rgba(255, 255, 255, 1);
+}
 h1{
     font-family: "TT Lakes";
     font-weight: 400;
-    font-style: normal;
+    font-style: normal; 
     font-size: 17px;
     margin-left: 19px;
 }
@@ -91,6 +92,9 @@ h1{
 
 }
 h2{
+    font-family: "TT Lakes";
+    font-weight: 500;
+    font-style: normal;
     font-size: 16px;
     margin: 0px;
     color: rgba(27, 28, 33, 1);
@@ -119,12 +123,19 @@ h2{
     line-height: 14px;
     background-color: rgba(248, 248, 248, 1);
 }
+.description-prices{
+    width: 320px;
+   padding: 10px;
+   background-color: rgba(248, 248, 248, 1);
+  
+}
 @media (min-width:784px){
     .footer-prices{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 100%;
+        padding: 10px;
     }
     .footer-right{
         display: flex;
@@ -135,12 +146,60 @@ h2{
         width: 100%;
     }
     .swiper-prices{
-        width:100%
+        width:100%; 
+        height: 500px;
     }
      .description-prices{
         width: 420px;
-        height: 60px;
+        height: 120px;
     }
+    .swiper-wrapper-prices{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 70px;
+    }
+    .swiper-slide-prices{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 70px;
+        border-bottom: 2px solid rgba(248, 248, 248, 1);
+    }
+    .swiper-pagination-prices{
+        display: none;
+    }
+    .gradient-prices{
+        display: none;
+    }
+    .swiper-header-prices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    background-color: rgba(248, 248, 248, 1);
+}
+h3{
+    display: none;
+}
+.title-prices {
+    width: 350px;
+}
+.title-time{
+    width: 240px;
+}
+.swiper-header-prices-h3{
+    display: flex;
+    width: 300px;
+     background-color: rgba(248, 248, 248, 1);
+}
 }
 
 /*Размер для веб*/
@@ -148,8 +207,9 @@ h2{
     .footer-prices{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 100%;
+        padding: 10px;
     }
     .footer-right{
         display: flex;
@@ -164,6 +224,31 @@ h2{
     }
     .description-prices{
         width: 420px;
-        height: 60px;
+        height: 120px;
+
     }
+    .swiper-header-prices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    background-color: rgba(248, 248, 248, 1);
+}
+.title-prices{
+    width: 340px;
+}
+.title-time{
+    width: 240px;
+}
+.swiper-header-prices-h3{
+    display: flex;
+    width: 300px;
+    background-color: rgba(248, 248, 248, 1);
+}
+
 }

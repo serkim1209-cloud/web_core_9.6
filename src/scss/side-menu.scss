@@ -24,7 +24,8 @@
     height: 100vh;
     box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
     border-radius: 7px;
-   
+    background-color: rgba(255, 255, 255, 1);
+
 }
 .side-menu-bagraund{
     position: fixed;
@@ -32,28 +33,29 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(239, 236, 236, 0.925);
     z-index: -1;
+    background-color: rgba(255, 255, 255, 1);
+    
 }
 .side-menu-bagraund.active {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-color: rgba(255, 253, 253, 0.801);
-    z-index: 2;
+    z-index: 3;
+
+ 
 }
 .side-menu.active {
     z-index: 3;
-     background-color: rgba(255, 255, 255, 1);
-      box-shadow: 100px 0px 52px rgba(112, 119, 119, 0.2);
-      transition: opacity 0.10s;
+    box-shadow: 100px 0px 52px rgba(112, 119, 119, 0.2);
+    transition: opacity 0.10s;
 }
 .side-menu-contact-img{
     display: flex;
     flex-direction: row;
     gap: 15px;
-    margin-bottom: 20px;
-   
+    margin-bottom: 20px; 
+    background-color: rgba(255, 255, 255, 1);
 }
 /*Все иконки*/
 .icons {
@@ -62,6 +64,7 @@
     margin: 0px 5px 0px;
     gap: 20px;
     padding: 10px;
+    background-color: rgba(255, 255, 255, 1);
 }
 /*Блок меню*/
 .side-menu-nav{
@@ -69,12 +72,12 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+    background-color: rgba(255, 255, 255, 1);
 
 }
 /*Кнопки в меню*/
 .nav--link{
     border: none;
-    background-color: rgba(255, 255, 255, 1);
     font-family: "TT Lakes";
     font-weight: 500;
     font-style: normal;
@@ -82,6 +85,7 @@
     text-decoration: none;
     color: rgba(27, 28, 33, 1);
    margin: 0px 15px 0px;
+   background-color: rgba(255, 255, 255, 1);
     
    
 }
@@ -99,13 +103,13 @@
 .side-menu-contact{
   margin-left: 15px;
   margin-top: auto;
+  background-color: rgba(255, 255, 255, 1);
 }
 /*Заголовок*/
 .left-border--link {
     color: rgba(126, 126, 130, 1);
     display: flex;
     align-items: center;
-    position: relative;
     right: 18px;
     margin-top: 15px;
     margin-bottom: 5px;
@@ -113,14 +117,17 @@
     font-weight: 500;
     font-style: normal;
     text-decoration: none;
+    background-color: rgba(255, 255, 255, 1);
 }
 /*Иконка поиска*/
 .icons--search {
     margin-left: 80px;
+    background-color: rgba(255, 255, 255, 1);
 }
 /*Голубая иконка с левой стороны*/
 .left-border {
-  
+  margin-left: 10px;
+  background-color: rgba(255, 255, 255, 1);
    
 }
 /*Номер телефона*/
@@ -129,6 +136,7 @@
     font-weight: 700;
     font-style:normal;
     color: rgba(27, 28, 33, 1);
+    background-color: rgba(255, 255, 255, 1);
 }
 /*Языки*/
 .lang {
@@ -139,6 +147,7 @@
     font-style: normal;
     margin-left: 15px;
     margin-top: 30px;
+    background-color: rgba(255, 255, 255, 1);
 }
 button {
     all:unset;
@@ -149,9 +158,11 @@ button {
     font-weight: 500;
     font-style: normal;
     color: rgba(27, 28, 33, 1);
+    background-color: rgba(255, 255, 255, 1);
  }
  .lang--ru {
     color: rgba(126, 126, 130, 1);
+    background-color: rgba(255, 255, 255, 1);
  }
  /*Иконка телефона*/
  .contact--chat-copy{
@@ -160,6 +171,9 @@ button {
  .icons--groubutton{
     width: 70px;
     height: 40px;
+ }
+ .contact--a{
+   background-color: rgba(255, 255, 255, 1);
  }
  @media(max-width: 768px){
     .side-menu{
@@ -172,4 +186,30 @@ button {
         height: 650px;
        
     }
+}
+@media (min-width:1120px){
+    .side-menu {
+        position: static;
+        box-shadow: none;
+       
+    }
+    .side-menu-bagraund{
+        position: static;
+        width: 320px;
+        z-index: 3;
+    }
+ body{
+    display: flex;
+    background-color: rgba(255, 255, 255, 1);
+ }
+ .burger-1{
+    display: none;
+ }
+ .icons{
+    display: flex;
+    margin-left: 0;
+    padding-left: 0;
+
+ }
+ 
 }
