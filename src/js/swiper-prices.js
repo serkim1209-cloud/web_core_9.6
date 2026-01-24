@@ -12,15 +12,21 @@ function initSwiper() {
         loop: true,
         breakpoints: {
             // Когда ширина окна >= 729px
-            729: {
+            768: {
                 enabled: false, // Отключает Swiper
             }
         }
     })
 
 }
-document.addEventListener('DOMContentLoaded', () => {
-  initSwiper();
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768 && swiper) {
+    swiper.destroy(true, true); // Уничтожаем слайдер на десктопах
+    swiper = null;
+  } else if (window.innerWidth <= 768 && !swiper) {
+    initSwiper(); // Инициализируем слайдер на мобильных
+  } 
 });
 
 
