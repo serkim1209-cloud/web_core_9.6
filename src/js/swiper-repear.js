@@ -49,7 +49,6 @@ const hiddenCount = getHiddenCount(); // сколько скрывать на э
 
   isOpen = !isOpen;
 });
-;
 function getHiddenCount() {
   const width = window.innerWidth;
   if (width >= 1120) { return 4; // планшеты
