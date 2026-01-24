@@ -92,6 +92,8 @@ h1{
 
 }
 h2{
+    display: flex;
+    align-items: center;
     font-family: "TT Lakes";
     font-weight: 500;
     font-style: normal;
@@ -156,8 +158,6 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    
-    
 }
     .footer-right{
         display: flex;
@@ -230,6 +230,11 @@ h3{
     width: 300px;
      background-color: rgba(248, 248, 248, 1);
 }
+
+.description-prices-h2{
+    display: flex;
+    gap: 5px;
+}
 }
 
 /*Размер для веб*/
@@ -286,4 +291,5 @@ h3{
 .web{
     display: block;
 }
+
 }

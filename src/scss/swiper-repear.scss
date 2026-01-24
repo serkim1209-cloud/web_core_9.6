@@ -65,6 +65,9 @@
     align-items: center;
    
 }
+#media-img-repear{
+    background-color: rgba(248, 248, 248, 1);
+}
 .swiper-title-repear {
     font-family: "TT Lakes";
     font-weight: 400;
@@ -139,7 +142,15 @@
     column-gap: 45px;
 }
 
+.swiper-slide-repear:nth-child(n+4){
+    display: none;
+ 
 }
+br{
+    display: none;
+}
+}
+
 @media(min-width: 1120px){
 
 
@@ -149,7 +160,9 @@
     gap: 20px;
     column-gap: 45px;
 }
-
+br{
+    display: none;
+}
 
 }
 @media (max-width: 784px){

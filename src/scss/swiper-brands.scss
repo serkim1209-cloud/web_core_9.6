@@ -48,12 +48,7 @@
 .swiper-pagination-bullet{
     background-color: rgb(153, 150, 150);
 }
-img {
-   
-    display: flex;
-    align-items: center;
-  
-}
+
 .swiper-title {
     font-family: "TT Lakes";
     font-weight: 400;
@@ -141,7 +136,6 @@ img {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     column-gap: 45px;
-
 
 }
 
