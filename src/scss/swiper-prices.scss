@@ -9,6 +9,14 @@
     background-color: rgba(255, 255, 255, 1)
   
 }
+.swiper-title-prices{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 50px;
+    background: linear-gradient(92deg, #F8F8F8 0%, #FFFFFF 98.61%);
+
+}
 .swiper-header-prices{
 display: none;
 }
@@ -146,6 +154,7 @@ h2{
 .tablet, .web{
     display: none;
 }
+
 @media (min-width:784px){
     .footer-prices{
         display: flex;

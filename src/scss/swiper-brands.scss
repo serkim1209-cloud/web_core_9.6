@@ -9,6 +9,7 @@
     box-sizing: border-box;
     background-color: rgba(248, 248, 248, 1);
     z-index: 1;
+    padding: 20px;
 
 }
 .swiper {
@@ -18,7 +19,6 @@
   width: 320px;
   height: 234px;
   margin: 0px;
-  padding: 20px;
 }
 .swiper-wrapper{
     width: 270px;
@@ -50,14 +50,18 @@
 }
 
 .swiper-title {
+    display: flex;
+    align-items: center;
     font-family: "TT Lakes";
     font-weight: 400;
     font-style: normal;
+    width: 250px;
     height: 50px;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.2px;
     margin-left: 15px;
+   background: linear-gradient(92deg, #F8F8F8 0%, #FFFFFF 98.61%);
 
 }
 .gradient{
@@ -124,6 +128,9 @@
     width: auto;
     height: auto;
 }
+.swiper-title{
+    width: auto;
+}
 .swiper-slide{
     width: auto;
 }
@@ -151,5 +158,6 @@
     .brands{
         width: 320px;
     }
+  
 }
 }
